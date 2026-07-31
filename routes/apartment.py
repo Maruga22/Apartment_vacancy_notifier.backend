@@ -48,6 +48,7 @@ def create_apartment():
         bathrooms=int(bathrooms),
         description=description,
         image=image_filename,
+        user_id=data["user_id"]
     )
 
     db.session.add(apartment)
